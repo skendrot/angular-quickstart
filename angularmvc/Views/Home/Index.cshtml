@@ -1,0 +1,18 @@
+﻿@section title{
+    Angular2 Version
+}
+@section scripts{
+    @Html.Partial("DefineAngular")
+<script>
+      window.module = 'aot';
+      System.import('app').catch(function(err){ console.error(err); });
+</script>
+    @*<script>
+        System.import('app/boottodolist');
+    </script>*@
+}
+<my-app class="todolistcontent">
+    <div class="waitloading">
+        loading...
+    </div>
+</my-app>
